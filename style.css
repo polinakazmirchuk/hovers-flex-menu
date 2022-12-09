@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+header {
+  width: 1280px;
+  height: 720px;
+  background: linear-gradient(
+    360deg,
+    rgba(107, 193, 255, 1) 28%,
+    rgba(255, 165, 241, 1) 100%
+  );
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 963px;
+  height: 86px;
+  background: #fff;
+  border-radius: 42px;
+  list-style-type: none;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu-item {
+  font-family: Roboto;
+  font-size: 29px;
+  font-weight: 500;
+  color: #696868;
+  transition: color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.menu-item:nth-of-type(1):hover {
+  box-shadow: inset 100px 0 0 0 #923aaa;
+  color: white;
+}
+
+.menu-item:nth-of-type(2):hover {
+  color: rgb(238, 151, 238);
+}
+
+.menu-item:nth-of-type(3):hover {
+  border: 2px dashed #923aaa;
+}
+
+.menu-item:nth-of-type(4):hover {
+  box-shadow: 0 0.2em 0.3em #923aaa;
+  border: 2px solid #923aaa;
+  transform: translateY(-0.2em);
+}
+
+.menu-item:nth-of-type(5):hover {
+  border: 3px dotted #923aaa;
+  color: #923aaa;
+  background: #fff;
+}
+
+.bg-top {
+  background: #dcdcdc;
+  height: 51px;
+  width: inherit;
+  border-radius: 42px 42px 0 0;
+  position: absolute;
+  margin-top: -49px;
+  z-index: -1;
+}
